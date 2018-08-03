@@ -19,8 +19,8 @@ public class Listener {
     private ProductService productService;
 
     @StreamListener("productsChannelOutput")
-    public void gettingProduct(Product product){
-        System.out.println("I received something.");
+    public void gettingProduct(Product product) {
+        System.out.println("I received: " + product);
         productService.create(product);
     }
 

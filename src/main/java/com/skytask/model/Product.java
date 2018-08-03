@@ -1,14 +1,11 @@
 package com.skytask.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Product {
 
     @Id
@@ -18,10 +15,6 @@ public class Product {
     private String description;
     private double price;
     private int stock;
-
-    public Product() {
-
-    }
 
     public Long getId() {
         return id;
