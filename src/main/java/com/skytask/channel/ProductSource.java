@@ -7,12 +7,12 @@ import org.springframework.messaging.SubscribableChannel;
 
 public interface ProductSource {
 
-    @Input("productsChannelOutput")
-    SubscribableChannel productsOutput();
+    @Input("createProductChannel")
+    SubscribableChannel createProduct();
 
-    @Input("productListChannelOutput")
-    SubscribableChannel productListOutput();
+    @Input("requestProductListChannel")
+    SubscribableChannel getProductList();
 
-    @Output("productListChannelInput")
-    MessageChannel productListInput();
+    @Output("responseProductListChannel")
+    MessageChannel hearProductList();
 }

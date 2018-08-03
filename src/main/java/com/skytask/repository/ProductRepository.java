@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.query.Procedure;
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
     @Procedure
-    int insert_product(String name, String description, Double price, Integer stock);
+    int insertProduct(String name, String description, Double price, Integer stock);
 }
