@@ -1,4 +1,4 @@
-package com.skytask.model;
+package com.skytask.common;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
